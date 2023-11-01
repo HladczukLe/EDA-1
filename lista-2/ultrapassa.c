@@ -42,7 +42,7 @@ void printLinkedList(Node *node){
     }
 }
 
-void printSumExceedingLimit(Node *node, int sumLimit) {
+void SumExceedingLimit(Node *node, int sumLimit) {
     Node *end = node;
     Node *list2 = NULL;
     int sum = 0;
@@ -83,7 +83,7 @@ void freeList(Node *node) {
 
     scanf("%d", &sumLimit);
 
-    printSumExceedingLimit(list, sumLimit);
+    SumExceedingLimit(list, sumLimit);
 
     freeList(list);
 
