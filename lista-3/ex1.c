@@ -14,7 +14,7 @@ int desenfileira (fila *f, int *y){
     //remove o elemento da fila e salva em y
     *y = f->dados[f->p];
 
-    //atualiza p para o próximo elemento
+    //atualiza a fila para o próximo elemento
     f->p = (f->p + 1) % f->N;
 
     return 1;
